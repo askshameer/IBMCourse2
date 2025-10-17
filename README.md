@@ -78,11 +78,11 @@ This project guides users through a complete data science workflow:
 ---
 
 ## Repository Structure
-├── data/ # Raw datasets & data wrangling scripts
-├── notebooks/ # Jupyter notebooks for each project module
-├── scripts/ # Python scripts for analysis, visualization & ML
-├── dash_app/ # Codebase for the Plotly Dash web app
-├── README.md # Project documentation (this file)
+- data/ # Raw datasets & data wrangling scripts
+- notebooks/ # Jupyter notebooks for each project module
+- scripts/ # Python scripts for analysis, visualization & ML
+- dash_app/ # Codebase for the Plotly Dash web app
+- README.md # Project documentation (this file)
 ---
 
 ## Getting Started
