@@ -1,45 +1,80 @@
-Applied Data Science Capstone Project
-Predicting Falcon 9 First Stage Landing Success
-Project Overview
+# Applied Data Science Capstone Project
 
-This capstone project explores the prediction of successful landings for the Falcon 9 rocket’s first stage, a key factor in SpaceX’s groundbreaking ability to reuse hardware and reduce launch costs. While SpaceX advertises launches at $62 million—far less than the $165 million charged by traditional providers—this cost efficiency hinges on reliably landing and reusing the first stage. By developing predictive models, we aim to better estimate true launch costs and provide insights for organizations competing in the space launch market.
+## Predicting Falcon 9 First Stage Landing Success
 
-Project Objectives
-The project is organized into sequential modules, each building on the last to form a complete end-to-end data science pipeline culminating in predictive modeling. Highlights of each phase are detailed below:
+Welcome to the Applied Data Science Capstone Project! In this project, we develop predictive models to forecast the successful landing of the Falcon 9 rocket’s first stage—a key achievement in SpaceX’s mission to make space travel more cost-effective.
 
-1. Acquiring and Preparing Data from the SpaceX API
-Data Collection: Initiated by fetching historical SpaceX launch data through the SpaceX API, capturing vital parameters for analysis.
-Data Cleaning: Standardized and cleaned the dataset by addressing inconsistencies, resolving missing values, and shaping the data for downstream use.
-2. Web Scraping for Falcon 9 Launch Records
-BeautifulSoup Web Scraping: Utilized BeautifulSoup to extract detailed Falcon 9 launch histories from Wikipedia.
-Data Parsing and Structuring: Converted scraped HTML tables into Pandas DataFrames for seamless manipulation and further analysis.
-3. Exploratory Data Analysis (EDA) and Label Assignment
-Visual Exploration: Leveraged visualization libraries such as Matplotlib and Seaborn to uncover patterns, trends, and correlations in the data.
-Data Labeling: Developed and assigned target labels for use in supervised machine learning.
-4. Database Integration and Querying
-Db2 Database Loading: Imported data into an IBM Db2 database to take advantage of SQL’s capabilities for structured querying.
-SQL Analysis: Designed and executed custom SQL queries to extract additional insights about launches and outcomes.
-5. Feature Engineering and Geospatial Visualization
-Feature Creation: Engineered new features from existing data to boost model accuracy and interpretability.
-Interactive Mapping: Used Folium to create interactive maps, revealing how launch locations relate to outcomes and uncovering spatial patterns in success/failure rates.
-6. Interactive Analytics via Plotly Dash
-Dash Application Development: Built an interactive dashboard with Plotly Dash, enabling real-time data exploration.
-User Controls: Added dynamic widgets like dropdowns and sliders, allowing users to engage with pie charts and scatter plots for a deeper dive into the data.
-7. Machine Learning and Model Refinement
-Preprocessing: Standardized and split the dataset into train and test sets for robust model assessment.
-Hyperparameter Tuning: Applied GridSearchCV for optimal tuning across model types, including SVM, Decision Trees, and Logistic Regression.
-Performance Evaluation: Compared model results to identify the best approach for “landing success” prediction.
-Summary of Results
-Best Model: The Decision Tree Classifier emerged as top performer, reaching 0.9444 accuracy on the test set.
-Other Models: Both Support Vector Machine and K-Nearest Neighbors achieved a respectable 0.8333 accuracy.
-Conclusion
-Through careful data gathering, cleaning, feature engineering, and comprehensive modeling, this project provides a reliable method to predict Falcon 9 landing success. The resulting insights can help estimate launch costs and inform bidding strategies for companies seeking to challenge SpaceX’s dominance in commercial spaceflight.
+SpaceX advertises Falcon 9 launches at $62 million, compared to the $165 million charged by other providers. This cost difference largely depends on the ability to routinely land and reuse rockets. Accurately predicting the likelihood of a successful landing not only refines launch cost estimates but also equips companies bidding for launches with valuable insights.
 
-Repository Overview
-data/: Raw datasets and data management scripts
-notebooks/: Jupyter notebooks documenting each stage of the project
-scripts/: Python scripts for data prep, analysis, and modeling
-dash_app/: Codebase for the Plotly Dash interactive dashboard
-README.md: In-depth project summary and instructions
-Acknowledgments
-Special thanks to IBM for providing resources and to Coursera for hosting the course materials.
+---
+
+## Table of Contents
+
+- [Project Objectives](#project-objectives)
+- [Workflow & Methodology](#workflow--methodology)
+- [Results](#results)
+- [Repository Structure](#repository-structure)
+- [Getting Started](#getting-started)
+- [Acknowledgments](#acknowledgments)
+
+---
+
+## Project Objectives
+
+This project guides users through a complete data science workflow:
+
+- Acquire and prepare launch data from the official SpaceX API and Wikipedia
+- Perform exploratory data analysis (EDA) and feature engineering
+- Store and query data within a Db2 database environment
+- Develop visualizations, including interactive dashboards and geospatial maps
+- Build, tune, and evaluate machine learning models to predict launch success
+
+---
+
+## Workflow & Methodology
+
+### 1. Data Acquisition & Preparation
+
+- **SpaceX API Request:** Gathered historical launch data via the SpaceX API—collecting details such as mission dates, payloads, and outcomes.
+- **Web Scraping:** Used BeautifulSoup to extract comprehensive Falcon 9 records from Wikipedia.
+- **Data Cleaning:** Addressed missing values, standardized formats, and structured the dataset in Pandas.
+
+### 2. Exploratory Data Analysis (EDA) & Labeling
+
+- Visualized data with Matplotlib and Seaborn to identify trends and relationships
+- Defined and assigned target labels indicating landing success/failure for supervised learning tasks
+
+### 3. Database Integration
+
+- Uploaded datasets to IBM Db2 for enhanced analysis
+- Crafted and performed SQL queries to extract actionable insights
+
+### 4. Feature Engineering & Visualization
+
+- Engineered new features (e.g., payload mass categories, boosters used, launch sites)
+- Created interactive maps using Folium to analyze geographical influences on landing outcomes
+
+### 5. Interactive Visual Analytics
+
+- Developed a Plotly Dash application featuring:
+    - Dropdowns and sliders for dynamic filtering
+    - Real-time interactive pie charts and scatter plots
+
+### 6. Machine Learning Pipeline
+
+- Standardized & split data into train/test sets
+- Modeled with Decision Trees, SVM, KNN, and Logistic Regression
+- Tuned parameters with GridSearchCV to optimize model performance
+- Evaluated and compared results to select the best-performing approach
+
+---
+
+## Results
+
+- **Decision Tree Classifier:** Achieved the best test accuracy (0.9444)
+- **SVM & KNN:** Both attained solid accuracy (0.8333)
+- **Outcome:** The developed model can reliably estimate the probability of a successful Falcon 9 landing, empowering more informed cost projections and competitive bidding strategies.
+
+---
+
+## Repository Structure
