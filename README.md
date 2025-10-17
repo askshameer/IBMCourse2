@@ -78,3 +78,38 @@ This project guides users through a complete data science workflow:
 ---
 
 ## Repository Structure
+data/ # Raw and processed datasets, data-wrangling scripts
+notebooks/ # Jupyter notebooks detailing each module step by step
+scripts/ # Python scripts for processing, visualization, and modeling
+dash_app/ # Source code for the interactive Plotly Dash dashboard
+README.md # This project overview and instructions
+---
+
+## Getting Started
+
+1. **Clone the repository:**
+2. git clone https://github.com/your-username/falcon9-landing-prediction.git
+cd falcon9-landing-prediction
+2. **Set up your environment:**  
+- Install dependencies from `requirements.txt`
+- Configure database credentials (for Db2 module)
+- Explore and run the notebooks in sequence
+
+3. **Launch the dashboard:**
+cd dash_app
+python app.py
+
+Open your browser to view the interactive dashboard.
+
+---
+
+## Acknowledgments
+
+- **IBM**: For providing the course structure and resources
+- **Coursera**: For hosting the learning platform and materials
+
+---
+
+Explore the repository to discover the complete data science pipeline—from raw data to interactive dashboards and predictive modeling. Whether your interest lies in data science, space technology, or machine learning, you’ll find actionable techniques and insights within this project.
+
+---
