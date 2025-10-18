@@ -67,11 +67,3 @@ This project guides users through a complete data science workflow:
 - Tuned parameters with GridSearchCV to optimize model performance
 - Evaluated and compared results to select the best-performing approach
 
----
-
-## Results
-
-- **Decision Tree Classifier:** Achieved the best test accuracy (0.9444)
-- **SVM & KNN:** Both attained solid accuracy (0.8333)
-- **Outcome:** The developed model can reliably estimate the probability of a successful Falcon 9 landing, empowering more informed cost projections and competitive bidding strategies.
-
